@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Numerologie | Geburtszahl</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/geburtszahlFunction.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--https://getuikit.com/docs/navbar-->
+<nav class="uk-container uk-navbar">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">
+                <a href="index.html"><strong>Numerologie.de</strong></a>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@s">
+            <li><a class="uk-text-large" href="index.html">Home</a></li>
+            <li><a class="uk-text-large" href="geburtszahl.html">Geburtszahl</a></li>
+            <li><a class="uk-text-large" href="wissenschaft.html">Wissenschaft</a></li>
+            <li><a class="uk-text-large" href="religion.html">Religion</a></li>
+            <li><a class="uk-text-large" href="blog.html">Blog</a></li>
+            <li><a class="uk-text-large" href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+    </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="sidenav-list uk-position-top-center uk-nav uk-flex uk-flex-column">
+            <li><a class="uk-text-large" href="index.html">Home</a></li>
+            <li><a class="uk-text-large" href="geburtszahl.html">Geburtszahl</a></li>
+            <li><a class="uk-text-large" href="wissenschaft.html">Wissenschaft</a></li>
+            <li><a class="uk-text-large" href="religion.html">Religion</a></li>
+            <li><a class="uk-text-large" href="blog.html">Blog</a></li>
+            <li><a class="uk-text-large" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="uk-grid header uk-cover-container" data-uk-grid-margin>
+    <div class="uk-width-medium-1-2 uk-height-large">
+        <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+            <div>
+                <h1 class="kontakt-headline header-h1">Geburtszahl</h1>
+            </div>
+            <div>
+                <!--https://www.vecteezy.com/members/johnstocker_video-->
+                <img style="transform: scaleX(-1);" class="kontakt-img" src="assets/img/men2.png" alt="Bild von Mann">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container">
+
+        <h3>Was ist die Geburtszahl?</h3>
+        <hr>
+        <p>
+            In vielen Kulturen wird die Geburtszahl Schicksalsnummer verstanden. Sie basiert auf dem Geburtsdatum einer
+            Person und soll angeblich Einblicke in die Persönlichkeit und den zukünftigen Lebensweg geben.
+        </p>
+        <p>
+            Es gibt verschiedene Methoden zur Berechnung der Lebenszahl. Die gängigste Methode funktioniert, in dem man
+            die Quersumme des Geburtsdatums aufsummiert, bis die Zahl einstellig ist.<br>
+            Für den Geburtstag 09.05.2003 würde sich beispielsweise eine Geburtszahl von 1 ergeben. ( 0 + 9 + 0 + 5 + 2 + 0 + 0 + 3 = 1 + 9 = 1 + 0 = 1)
+
+        </p>
+        <p>
+            Disclaimer: Es ist wichtig zu beachten, dass es für die Geburtszahl keine wissenschaftliche Grundlage gibt und somit keinen Beweis, dass tatsächlich
+            Aussagen über die Persönlichkeit oder den Lebensweg einer Person getroffen werden können.
+
+        </p>
+    </div>
+</div>
+<!--https://getuikit.com/docs/form-->
+<div class="uk-section-muted uk-padding-large">
+    <div class="uk-container">
+        <h4 class="uk-text-center">Berechne deine Geburtszahl</h4>
+        <form>
+            <div class="uk-flex geburtszahl-form uk-flex-between">
+                <div class="uk-padding-large">
+                    <input id="tag" class="uk-input" type="text" placeholder="Tag" aria-label="Input">
+                </div>
+                <div class="uk-padding-large">
+                    <input id="monat" class="uk-input" type="text" placeholder="Monat" aria-label="Input">
+                </div>
+                <div class="uk-padding-large">
+                    <input id="jahr" class="uk-input" type="text" placeholder="Jahr" aria-label="Input">
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-column">
+                <div class="uk-align-center">
+                    <button onclick="test()" type="button" class="button-custom1">berechnen
+                    </button>
+                </div>
+
+                <div class="uk-align-center">
+                    <p id="lebenszahl-ausgabe"></p>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index">
+    &copy; 2023 Miikka Koensler <br>
+    <a href="impressum.html">Impressum</a>
+</div>
+
+
+</body>
+</html>

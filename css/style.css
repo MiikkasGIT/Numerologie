@@ -1,0 +1,74 @@
+#sidenav{
+    width: 100%;
+}
+
+.uk-offcanvas-bar{
+    width: 100%;
+}
+
+hr{
+    width: 20px;
+    height: 3px;
+    background-color: #75ACBD;
+    border: none;
+}
+.sidenav-list{
+    align-items: center;
+}
+.kontakt-headline{
+    margin-top: 180px;
+}
+.kontakt-img{
+    margin-top: 30px;
+    width: 250px;
+}
+
+.header-content{
+    margin-top: 140px;
+}
+
+.header-h1{
+    color: white;
+}
+.header-p{
+    color: #ececec;
+}
+.header{
+    background-color:#75ACBD;
+
+}
+@media only screen and (max-width: 639px) {
+    .geburtszahl-form {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .home-img {
+        display: none;
+    }
+}
+
+/*/
+    Custom Buttons
+ */
+
+.button-custom1{
+    padding: 0 40px;
+    line-height: 53px;
+    font-size: .875rem;
+    background-color: white;
+    color: #75ACBD;
+    box-shadow: none;
+    border: 1px solid #75ACBD;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button-custom1:hover{
+    background-color: #75ACBD;
+    color: white;
+}
+
+.blog-post{
+    align-items: center;
+}
